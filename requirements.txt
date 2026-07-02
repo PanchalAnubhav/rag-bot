@@ -1,0 +1,8 @@
+fastapi 
+uvicorn 
+ollama 
+chromadb 
+sentence-transformers 
+pydantic 
+python-dotenv 
+sqlalchemy
