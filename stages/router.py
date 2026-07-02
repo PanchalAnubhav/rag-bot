@@ -1,4 +1,5 @@
 from ollama_client import call_llm
+from utils import safe_format
 
 MASTER_POLICY = open("stages/master_policy.txt").read()
 
@@ -27,5 +28,5 @@ USER QUESTION:
 """
 
 def classify(user_query: str, user_role: str, allowed_domains: list) -> dict:
-    prompt = ROUTER_PROMPT.format(user_role=user_role, allowed_domains=allowed_domains)
+    prompt = safe_format(ROUTER_PROMPT, user_role=user_role, allowed_domains=allowed_domains)
     return call_llm(prompt, user_query)
