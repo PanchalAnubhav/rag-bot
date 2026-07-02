@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug pipeline",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/test_pipeline.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
