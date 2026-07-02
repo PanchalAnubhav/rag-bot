@@ -1,4 +1,5 @@
-""" this module provides a simple function to perform web searches using the DuckDuckGo API. """
+""" this module provides a simple function to 
+perform web searches using the DuckDuckGo API. """
 import requests
 
 def search_web(query: str) -> str:
