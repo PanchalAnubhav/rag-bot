@@ -20,8 +20,8 @@ Output format:
   "requires_web_search": true | false
 }
 
-USER ROLE: {user_role}
-ALLOWED DOMAINS: {allowed_domains}
+USER ROLE: $user_role
+ALLOWED DOMAINS: $allowed_domains
 
 USER QUESTION:
 {user_query}

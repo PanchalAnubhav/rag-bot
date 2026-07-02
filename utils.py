@@ -1,6 +1,4 @@
-class SafeDict(dict):
-    def __missing__(self, key):
-        return f"{{{key}}}"  # leaves placeholder visible if truly missing, easier to debug
+from string import Template
 
 def safe_format(template: str, **kwargs) -> str:
-    return template.format_map(SafeDict(**kwargs))
+    return Template(template).safe_substitute(**kwargs)
