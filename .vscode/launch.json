@@ -5,7 +5,7 @@
       "name": "Debug pipeline",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/test_pipeline.py",
+      "program": "${workspaceFolder}/tests/test_pipeline.py",
       "console": "integratedTerminal"
     }
   ]
