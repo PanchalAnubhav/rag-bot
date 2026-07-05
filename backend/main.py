@@ -3,7 +3,7 @@ from stages import router, sanitizer, generator, output_filter
 from vector_store import query as vector_query
 from audit import log_entry
 from auth import get_current_user  # you'll build this against your SSO
-from search import search_web
+from backend.search import search_web
 
 app = FastAPI()
 

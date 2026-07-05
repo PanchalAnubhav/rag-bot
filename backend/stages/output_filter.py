@@ -1,4 +1,4 @@
-from ollama_client import call_llm
+from backend.ollama_client import call_llm
 
 MASTER_POLICY = open("stages/master_policy.txt").read()
 

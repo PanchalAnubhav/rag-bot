@@ -1,5 +1,5 @@
-from ollama_client import call_llm
-from utils import safe_format
+from backend.ollama_client import call_llm
+from backend.utils import safe_format
 
 MASTER_POLICY = open("stages/master_policy.txt").read()
 
